@@ -1,8 +1,8 @@
-import org.omg.Messaging.SyncScopeHelper;
+import org.jsoup.Connection;
+import org.jsoup.Jsoup;
 
-import java.io.File;
+import javax.swing.text.html.parser.Parser;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 public class siteScan {
 
@@ -10,6 +10,11 @@ public class siteScan {
     //String fileName = "C:/Users/ralmeida/Documents/wopa/_Private/siteScan/example.txt";
     String fileName = "example.txt"; // This works because the file is on the root path of this project
 
+    //Connection doc = Jsoup.connect("https://wahlinfastigheter.se/");
+    Parser parser = new Parser("https://wahlinfastigheter.se/");
+
+
+/*
     File textFile = new File(fileName);
 
     Scanner scanner = new Scanner(textFile);
@@ -23,6 +28,7 @@ public class siteScan {
         System.out.println("Read line: "+ line);
     }
 
-    scanner.close();
+    scanner.close();*/
+
     }
 }
