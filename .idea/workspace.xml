@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aa2a562-b7ee-4b6a-a208-7411aef3af70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Machine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/siteScan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/siteScan.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/siteScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/siteScan.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,7 +76,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -1,34 +1,44 @@
-import org.jsoup.Connection;
-import org.jsoup.Jsoup;
-
-import javax.swing.text.html.parser.Parser;
-import java.io.FileNotFoundException;
+import java.io.*;
 
 public class siteScan {
-
-    public static void main(String[] args) throws FileNotFoundException {
-    //String fileName = "C:/Users/ralmeida/Documents/wopa/_Private/siteScan/example.txt";
-    String fileName = "example.txt"; // This works because the file is on the root path of this project
-
-    //Connection doc = Jsoup.connect("https://wahlinfastigheter.se/");
-    Parser parser = new Parser("https://wahlinfastigheter.se/");
+    /* Objective: Scan a website and do something with the content of the website
+     *  URL: https://wahlinfastigheter.se/
+     * */
 
 
-/*
-    File textFile = new File(fileName);
+    public static void main(String[] args) {
+        File file = new File("example.txt");
+        BufferedReader br;
+        String line;
 
-    Scanner scanner = new Scanner(textFile);
+        try {
+            FileReader fr = new FileReader(file);
+            br = new BufferedReader(fr);
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+            br.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found: " + file.toString());
+        } catch (IOException e) {
+            System.out.println("Unable to read file: " + file.toString());
+        }
 
-    int value = scanner.nextInt();
-    System.out.println("Read value: "+value);
 
-    int count = 2;
-    while(scanner.hasNextLine()){
-        String line = scanner.nextLine();
-        System.out.println("Read line: "+ line);
-    }
+        Camera cam1 = new Camera();
+        try {
+            cam1.setId(5);
+            cam1.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
-    scanner.close();*/
+
+        Car car1 = new Car();
+        car1.setId(4);
+
+//        Machine machine1 = new Machine();
+        car1.run();
 
     }
 }
