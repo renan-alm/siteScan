@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aa2a562-b7ee-4b6a-a208-7411aef3af70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/siteHTML.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/siteScan/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/siteScan/Camera.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/siteScan/siteScan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/siteScan/siteScan.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/siteScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/siteScan.java" afterDir="false" />
     </list>
@@ -103,5 +100,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="writer.cb" />
+        <watch expression="((FileWriter)writer.lock).se" custom="java.io.FileWriter" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
