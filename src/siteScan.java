@@ -7,34 +7,30 @@ public class siteScan {
      * */
 
     public static void main(String[] args) throws IOException {
-        String url = "https://wahlinfastigheter.se/lediga-objekt/forrad/";
-        String filename = "siteHTML";
+        String url = "https://wahlinfastigheter.se/lediga-objekt/lagenheter/";
+        String filename = "siteHTML.txt";
+
         String line;
+        File file;
         BufferedWriter bufferedWriter;
-
-
-        File file = new File(filename);
-        FileReader fileReader = new FileReader(file);
-        BufferedReader bufferedReader = new BufferedReader(fileReader);;
         int count=1;
 
+        file = new File(filename);
+        FileReader fileReader = new FileReader(file);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
 
         try {
-            BufferedReader in = new BufferedReader(
-                                new InputStreamReader(
-                                new URL(url).openStream()));
-
+            BufferedReader in = new BufferedReader(new InputStreamReader(getURLStream(url)));
             bufferedWriter = new BufferedWriter(new FileWriter(filename));
-            bufferedWriter.write("Testing");
 
             while ( (line = in.readLine()) != null) {
-                System.out.println((count+=1));
-                //System.out.println(line);
-            }
-            while ((line = bufferedReader.readLine()) != null) {
+                //System.out.println((count+=1));
                 System.out.println(line);
+                bufferedWriter.write(line);
             }
+            bufferedWriter.close();
             bufferedReader.close();
+
         } catch (FileNotFoundException e) {
             assert file != null;
             System.out.println("File not found: " + file.toString());
@@ -43,5 +39,9 @@ public class siteScan {
             System.out.println("Unable to read file: " + file.toString());
         }
 
+    }
+
+    private static InputStream getURLStream(String url) throws IOException {
+        return new URL(url).openStream();
     }
 }

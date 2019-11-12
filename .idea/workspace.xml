@@ -4,6 +4,7 @@
     <list default="true" id="6aa2a562-b7ee-4b6a-a208-7411aef3af70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/siteScan/siteScan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/siteScan/siteScan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/siteHTML.txt" beforeDir="false" afterPath="$PROJECT_DIR$/siteHTML.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/siteScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/siteScan.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,6 +103,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/Reader.java</url>
+          <line>75</line>
+          <properties class="java.io.Reader" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="writer.cb" />
