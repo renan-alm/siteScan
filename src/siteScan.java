@@ -13,7 +13,6 @@ public class siteScan {
         String line;
         File file;
         BufferedWriter bufferedWriter;
-        int count=1;
 
         file = new File(filename);
         FileReader fileReader = new FileReader(file);
@@ -24,21 +23,21 @@ public class siteScan {
             bufferedWriter = new BufferedWriter(new FileWriter(filename));
 
             while ( (line = in.readLine()) != null) {
-                //System.out.println((count+=1));
                 System.out.println(line);
                 bufferedWriter.write(line);
+
+//                Tags containing:
+//                        <section class="local-objects-info">
+//                        <a href="https://wahlinfastigheter.se/lediga-objekt/lagenheter/">
+//                        <span class="total-article">0</span>
+//                 OBJECTIVE: GET THE NUMBER 0 AND ACT ON THAT
             }
             bufferedWriter.close();
             bufferedReader.close();
 
-        } catch (FileNotFoundException e) {
-            assert file != null;
-            System.out.println("File not found: " + file.toString());
         } catch (IOException e) {
-            assert file != null;
             System.out.println("Unable to read file: " + file.toString());
         }
-
     }
 
     private static InputStream getURLStream(String url) throws IOException {
